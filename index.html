@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Casino</h1>
+    <div class="container1">
+        <p id="heading">Dein Geld: 100€</p>
+        <label class="label">Dein Einsatz: </label>
+        <input id="Einsatz">
+        <label class="label">€</label><br> <br>
+        <p class="wette">Platziere deine Wette: </p>
+        <div id="ContainerOptionen">
+            <div onclick="eintrag1()" id="Option1" class="options">1</div>
+            <div onclick="eintrag2()" id="Option2" class="options">2</div>
+            <div onclick="eintrag3()" id="Option3" class="options">3</div>
+        </div>
+        <div id="buttonContainer">
+            <button onclick="Bestätigung()" id="BestätigungsBtn">Bestätigen</button>
+        </div>
+        <div id="ResetContainer">
+            <button onclick="Reset()" id="RessetBtn">Reset</button>
+        </div>
+    </div>
+    <audio id="audioFehler" src="572938__bloodpixelhero__error-3.wav"></audio>
+    <audio id="audioWin" src="win.wav"></audio>
+    <script src="index.js"></script>
+</body>
+
+</html>
